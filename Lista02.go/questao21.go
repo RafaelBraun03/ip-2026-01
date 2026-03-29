@@ -4,9 +4,12 @@ import f "fmt"
 
 func main () {
 
-	var n1, n2, n3, nota, mediaex float32
+	var n, n1, n2, n3, nota, mediaex float32
 	var conceito string
 
+
+    f.Println("Digite o número do aluno: ")
+    f.Scan(&n)
 	f.Println("Digite o valor primeira nota: ")
     f.Scan(&n1)
 	f.Println("Digite o valor segunda nota: ")
@@ -17,7 +20,10 @@ func main () {
     f.Scan(&mediaex)
 	nota = (n1 + 2*n2 + 3*n3 + mediaex)/7
 
-
+    f.Println("Número do aluno:", n)
+	f.Println("Nota 1:", n1)
+	f.Println("Nota 2:", n2)
+	f.Println("Nota 3:", n3)
     if (nota < 4.0) {
 		conceito = "E"
 	}else {
@@ -38,8 +44,8 @@ func main () {
 	f.Println("NOTA = ", nota, " ", "CONCEITO = ", conceito)
 	
 	if conceito == "A" || conceito == "B" || conceito == "C" {
-		f.Println("APROVADO")
+		f.Println("STATUS: APROVADO")
 	}else {
-		f.Println("REPROVADO")
+		f.Println("STATUS: REPROVADO")
 	}
 }
