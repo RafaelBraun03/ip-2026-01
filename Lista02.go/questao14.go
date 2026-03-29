@@ -37,7 +37,7 @@ func main () {
 	f.Printf("d) Direção hidráulica (R$ %.2f)? (s/n): ", v_direcao)
 	f.Scan(&resposta)
 	if s.ToLower(resposta) == "s" {
-		v2 = v2 + v_direcao
+	 	v2 = v2 + v_direcao
 	}
 	f.Printf("O valor final do carro é: %.2f", v2)
 

@@ -4,7 +4,7 @@ import f "fmt"
 
 func main () {
 
-	var n1, n2, n3, nota float32
+	var n1, n2, n3, nota, mediaex float32
 	var conceito string
 
 	f.Println("Digite o valor primeira nota: ")
@@ -13,7 +13,9 @@ func main () {
     f.Scan(&n2)
 	f.Println("Digite o valor terceira nota: ")
     f.Scan(&n3)
-	nota = (n1 + 2*n2 + 3*n3)/7
+	f.Println("Digite o valor da média dos exercícos: ")
+    f.Scan(&mediaex)
+	nota = (n1 + 2*n2 + 3*n3 + mediaex)/7
 
 
     if (nota < 4.0) {

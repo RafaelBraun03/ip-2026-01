@@ -25,7 +25,7 @@ func main() {
 		f.Printf("Salário líquedo =%.2f", s_liq)
 	}
 	if s_bruto > 2000.00 {
-		s_liq = 0.80*s_bruto
+		s_liq = 0.68*s_bruto
 		f.Printf("Salário bruto = %.2f", s_bruto)
 		f.Println("")
 		f.Printf("Salário líquedo =%.2f", s_liq)
