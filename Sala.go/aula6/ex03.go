@@ -15,6 +15,7 @@ func main() {
 	for i = 0; i < 10; i++ {
 		n_inv[i] = n[9-i]
 	}
-
+    f.Print("A ordem original é:", n)
+    f.Println("")
 	f.Print("A ordem inversa é: ", n_inv)
 }
