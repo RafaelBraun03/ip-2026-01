@@ -13,16 +13,12 @@ func maior(a, b, c int)int{
 	 }
 	 if c > a && c > b {
 		m =c
-	 }
-			
-	return m
-		 
+	 }		
+	return m		 
 }
 func main() {
 	var a, b, c int
-
 	f.Println("Insira três números:")
     f.Scan(&a, &b, &c)
-
 	f.Println("O maior é:", maior(a, b, c))
 }
