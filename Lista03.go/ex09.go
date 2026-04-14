@@ -22,12 +22,15 @@ func main() {
 		somaalunos = somaalunos + mediaaluno[i]
 		if mediaaluno[i]>=0 && mediaaluno[i]<3 {
 			reprovado = reprovado + 1
+			f.Println("REPROVADO")
 		} 
 		if mediaaluno[i] >= 3.0 && mediaaluno[i]<=7.0 {
 			exame = exame + 1
+			f.Println("EXAME")
 		}
 		if mediaaluno[i] > 7 {
 			aprovado = aprovado +1
+			f.Println("APROVADO")
 		}
 		}else{
 			f.Println("Nota inserida inválida")

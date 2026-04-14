@@ -18,7 +18,7 @@ func main() {
 	f.Scan(&x)
     s = x 
 	for i:=1; i <20; i++{
-		s = s + m.Pow(-1, float64(i))/float64(fatorial(i))
+		s = s + x*m.Pow(-1, float64(i))/float64(fatorial(i))
 	}
 	f.Println("S = ", s)
 }
