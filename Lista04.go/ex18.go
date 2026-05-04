@@ -1,11 +1,15 @@
-//Aqui é necessário fazer uma ordenaçao por inserção/ insertion sort
+// Aqui é necessário fazer uma ordenaçao por inserção/ insertion sort
 package main
 
-import 	"fmt"
+import (
+	"fmt"
+	f "fmt"
+)
 
 func main() {
 	var vetor [10]int
 
+	f.Println("Insira 10 números inteiros")
 	for i := 0; i < 10; i++ {
 		var num int
 		fmt.Scan(&num)
