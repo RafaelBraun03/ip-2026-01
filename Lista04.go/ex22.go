@@ -12,6 +12,18 @@ func main (){
 	for i:=0;i<10;i++{
 		f.Printf("Conta %d :",i+1)
 		f.Scan(&conta[i])
+		repetido:=false
+			for j:=0;j<i;j++{
+		    if conta[j] == conta[i] {
+				repetido = true
+				   break
+			    } 
+		   }
+		  
+		   if repetido {
+			 f.Println("Número de conta já registrado")
+					return
+				}
 		f.Printf("Saldo:")
 		f.Scan(&saldo[i])
 		s = s + saldo[i]
