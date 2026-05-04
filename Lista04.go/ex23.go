@@ -3,8 +3,8 @@ package main
 import f "fmt"
 		
 func main (){
-	corredor := make([]int, 10)
-	janela := make([]int,10)
+	corredor := make([]int, 24)
+	janela := make([]int,24)
 	var assento int
 	for{
 		f.Println("Selecione a opção desejada:")
@@ -32,7 +32,7 @@ func main (){
 			}
 			f.Println("Escolha a Poltrona:")
 			f.Scan(&assento)
-			if assento < 1 || assento > 10 {
+			if assento < 1 || assento > 24 {
 				f.Println("Poltrona inválida")
 				f.Println("")
 				break
@@ -62,7 +62,7 @@ func main (){
 			}
 			f.Println("Escolha a Poltrona:")
 			f.Scan(&assento)
-			if assento < 1 || assento > 10 {
+			if assento < 1 || assento > 24 {
 				f.Println("Poltrona inválida")
 				f.Println("")
 				break
@@ -77,10 +77,10 @@ func main (){
 			 f.Println()
 
 		case x==3:
-			f.Println("--------------------------------")
+			f.Println("------------------------------------------------------------")
 			f.Println("Corredor:",corredor)
 			f.Println("Janela:",janela)
-			f.Println("--------------------------------")
+			f.Println("------------------------------------------------------------")
 
 		case x == 4:
 			return
